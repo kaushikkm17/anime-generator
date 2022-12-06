@@ -7,28 +7,27 @@
     <title>Anime Generator</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
-    <script src="/app.js"></script>
+    <script src="/app.js" defer></script>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><strong>Anime Generator</strong></li>
             <li>How To Use</li>
             <li>Tech Used</li>
         </ul>
     </nav>
-    <main>
-        <button></button>
-        <button></button>
-        <h1>Generate Random Anime Character</h1>
-        <form>
+    <main id="main-content">
+        <button id="show-btn">button 1</button>
+        <button id="char-btn">button 2</button>
+        <h1 main-header>Generate Random Anime Character</h1>
+        <form id="search-form">
             <input type="text" placeholder="Enter an anime name">
-            <button type="submit"></button>
+            <button type="submit">Submit</button>
         </form>
-        <img src="" alt="anime-char">
-        <section>section</section>
+        <section id="retrieved-img">section</section>
+        <section id="retrieved-data">section</section>
 
     </main>
-    <div id="checktoseeifapiworks"></div>
 </body>
 </html>

@@ -1,0 +1,13 @@
+body{
+    background-color: black;
+    color: wheat;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+}
+section{
+    background-color: white;
+    margin:5px;
+    width: 150px;
+}
