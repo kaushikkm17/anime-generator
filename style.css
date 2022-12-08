@@ -1,16 +1,45 @@
 body{
-    background-color: black;
-    color: wheat;
+    background-color: #218A74;
+    color: #6acbde;
+    text-align:center;
+    font-family: 'Inter';
 }
 nav ul{
     display:flex;
     list-style: none;
+    justify-content: center;
 }
 section{
-    background-color: white;
     margin:5px;
-    width: 300px;
+    width: 400px;
+    margin: auto;
 }
 section img{
     width: 100%;
+    margin: 40px 0px;
+    border-radius: 5px;
+}
+#main-content{
+    margin-top: 50px;
+}
+#show-btn, #char-btn{
+    background-color: rgba(0,0,0,0.5);
+    margin-bottom:30px;
+    padding:5px;
+    border-radius: 5px;
+}
+#generate-btn{
+    padding: 10px 40px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    font-size: 16px;
+    transition-duration: 1s;
+}
+button:hover{
+    cursor: pointer;
+    background-color: black;
+    color:white;
+}
+strong{
+    color:rgb(59, 59, 59);
 }
