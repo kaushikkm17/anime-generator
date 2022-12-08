@@ -14,7 +14,8 @@
  ![screenshot 2](/images/Screenshot%202022-12-08%20at%201.01.53%20AM.png "screenshot 3")
 
  # Getting Started:
-    link to deployed application
+ ### Link to live app:
+    anime-generator-app.netlify.app
  - Click the `top buttons` to switch between searching for anime or anime characters
  - After that, click the `generate` button to output the data to the DOM
 
