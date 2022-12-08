@@ -9,5 +9,8 @@ nav ul{
 section{
     background-color: white;
     margin:5px;
-    width: 150px;
+    width: 300px;
+}
+section img{
+    width: 100%;
 }
