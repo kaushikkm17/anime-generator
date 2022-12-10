@@ -10,9 +10,13 @@ Generates a random anime or character
 
 
  # Screenshots 
- ![screenshot 1](/images/Screenshot%202022-12-08%20at%201.01.05%20AM.png "screenshot 1" )
- ![screenshot 2](/images/Screenshot%202022-12-08%20at%201.01.23%20AM.png "screenshot 2")
- ![screenshot 3](/images/Screenshot%202022-12-08%20at%201.01.53%20AM.png "screenshot 3")
+
+![screenshot](/images/Screenshot%202022-12-08%20at%201.01.05%20AM.png)
+![screenshot](/images/Screenshot%202022-12-08%20at%201.01.23%20AM.png)
+![screenshot](/images/Screenshot%202022-12-08%20at%201.01.53%20AM.png)
+
+
+
 
  # Getting Started:
  [ Click here](https://anime-generator-app.netlify.app/) to see the deployed app
