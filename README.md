@@ -1,5 +1,5 @@
 # Anime Generator
-Generates a random anime or character 
+Generates a random anime or character. A great way to find a new anime to watch without all the decision making and research.
 # Technologies used
 - HTML5
 - CSS3
