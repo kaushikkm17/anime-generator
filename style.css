@@ -12,12 +12,16 @@ nav ul{
 section{
     margin:5px;
     width: 360px;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
 }
 section img{
     width: 100%;
     margin: 40px 0px;
     border-radius: 5px;
+}
+h3{
+    color: black;
 }
 #main-content{
     margin-top: 50px;
@@ -42,4 +46,9 @@ button:hover{
 }
 strong{
     color:rgb(59, 59, 59);
+}
+@media screen and (min-width: 500px){
+    section {
+        width: 500px;
+    }
 }

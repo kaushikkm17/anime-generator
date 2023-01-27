@@ -46,7 +46,8 @@ $generateBtn.on("click", () => {
                 summary = res.data.attributes.synopsis;
                 $retrievedImg.html(`<img src='${imgUrl}' alt='anime image'>`);
                 $retrievedData.html(
-                    `<strong>Title:</strong> ${animeName}<strong>  Summary:</strong> ${summary}`
+                    `<h3>${animeName}</h3>
+                    <p>${summary}</p>`
                 );
             },
             (error) => console.log(error)
