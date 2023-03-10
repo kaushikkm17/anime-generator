@@ -20,14 +20,16 @@ function getRandomInt(min, max) {
 
 
 $showBtn.on("click", (e) => {
-    $charBtn.css("color", "black");
     e.target.style.color = "white";
+    e.target.style.opacity = 1
+    $charBtn.css("opacity", 0.7)
     $mainHeader.text("Generate Random Anime");
     $generateBtn.attr("class", "generating-anime");
 });
 $charBtn.on("click", (e) => {
-    $showBtn.css("color", "black");
     e.target.style.color = "white";
+    e.target.style.opacity = 1
+    $showBtn.css("opacity", 0.7)
     $mainHeader.text("Generate Random Character");
     $generateBtn.attr("class", "generating-char");
 });
@@ -44,11 +46,15 @@ $generateBtn.on("click", () => {
                 animeName = res.data.attributes.canonicalTitle;
                 imgUrl = res.data.attributes.posterImage.original;
                 summary = res.data.attributes.synopsis;
+                $retrievedData.css("border", "0.2rem solid rgba(0,0,0,0.3)")
                 $retrievedImg.html(`<img src='${imgUrl}' alt='anime image'>`);
                 $retrievedData.html(
-                    `<h3>${animeName}</h3>
-                    <p>${summary}</p>`
+                    `<h3 class='retrieved-title'>${animeName}</h3>
+                    <p class='retrieved-summary'>${summary}</p>`
                 );
+                $retrievedData.hide().delay(1000).fadeIn();
+                $retrievedImg.hide().delay(1000).fadeIn();
+
             },
             (error) => console.log(error)
         );
@@ -66,10 +72,15 @@ $generateBtn.on("click", () => {
                 charName = res.data.attributes.name;
                 imgUrl = res.data.attributes.image.original;
                 summary = res.data.attributes.description;
+                $retrievedData.css("border", "0.2rem solid rgba(0,0,0,0.3)")
                 $retrievedImg.html(`<img src='${imgUrl}' alt='anime image'>`);
                 $retrievedData.html(
-                    `<strong>Name: </strong>${charName}<strong>  Description: </strong>${summary}`
-                );
+                    `<h3 class='retrieved-title'>${charName}</h3>
+                    <p class='retrieved-summary'>${summary}</p>`
+                )
+
+                $retrievedData.hide().delay(1000).fadeIn();
+                $retrievedImg.hide().delay(1000).fadeIn();
             },
             (error) => console.log(error)
         );
